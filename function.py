@@ -25,19 +25,21 @@ def distance_matrix(matrix):
     sum = 0
     # print(dist_matrix)
     for i in range(dim):
-        for j in range(len(matrix[0])):
+        for j in range(dim):
             dist_matrix[j][i] = (matrix[0][i] - matrix[1][i])**2
-        print(dist_matrix[j][i])
+            # print(i, j)
+        # print(dist_matrix[j][i])
         sum += dist_matrix[j][i]
     distance = m.sqrt(sum)
+    print(distance)
     return distance
-# a = random_matrix(dot, dim)
-# distance_matrix(a)
+a = random_matrix(dot, dim)
+distance_matrix(a)
 
 def sortX(matrix):
     for i in range(len(matrix)):
         for j in range(len(matrix)):
             if matrix[i][0] < matrix[j][0]:
                 matrix[i], matrix[j] = matrix[j], matrix[i]
-    print(matrix)
+    # print(matrix)
     return matrix
