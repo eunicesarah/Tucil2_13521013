@@ -2,6 +2,7 @@ from function import *
 import time as t
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
+import platform
 
 count = 0
 
@@ -124,6 +125,7 @@ def main():
     print("Pasangan titik terdekat: ", b, c,)
     print("Banyak Euclidean Distance yang dihitung: ", count, "kali")
     print("Execution time: ", endTime - startTime, "detik")
+    print("Platform: ", platform.processor())
     print("====================================BRUTE FORCE======================================")
     startTimeBrute = t.time()
     d, e = bruteForce(a)
@@ -139,4 +141,5 @@ def main():
         print("Maaf dimensi tidak tersedia untuk visualisasi")
     print("Terima kasih telah bermain!")
 
-main()
+if __name__ == "__main__":
+    main()
