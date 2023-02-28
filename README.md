@@ -7,12 +7,12 @@ Program ini mencari pasangan titik terdekat dari $R^n$ dengan algoritma Divide a
 ### Requirement Program
 Pastikan Anda telah menginstall Python
 Berikut adalah library yang harus terinstall:
-    1. time
-    2. math
-    3. random
-    4. os
-    5. matplotlib
-    6. platform
+1. time
+2. math
+3. random
+4. os
+5. matplotlib
+6. platform
 
 ### Cara menjalankan program
 1. Clone repository ini
